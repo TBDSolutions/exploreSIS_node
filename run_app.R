@@ -5,7 +5,9 @@
   sis_src <- "Paste/path/to/SIS/data/here"
   
   # sis_full gets passed to the readSIS.R script
-  sis_full <- read.csv(sis_src, colClasses = c("sis_cl_medicaidNum" = "character"))
+  sis_full <- read.csv(sis_src, 
+                       colClasses = c("sis_cl_medicaidNum" = "character"),
+                       na.strings = c(""," ","NA"))
   
   ## Transform using standard script
   source("https://raw.githubusercontent.com/j-hagedorn/exploreSIS/master/prep/readSIS.R")
