@@ -42,7 +42,7 @@
                 destfile = "ui.R")
   
   ## Download most recent server.R file and save in node repo
-  download.file(url = "https://github.com/j-hagedorn/exploreSIS/blob/master/server.R", 
+    download.file(url = "https://raw.githubusercontent.com/j-hagedorn/exploreSIS/master/server.R", 
                 destfile = "server.R")
 
 #####################################################################
