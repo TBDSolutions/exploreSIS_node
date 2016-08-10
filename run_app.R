@@ -23,6 +23,9 @@
   ## Apply any local transformations saved in PIHP-level script
   source("prep/housekeeping.R")
   
+  ## Create SIS to service mappings and save in local data file for use in global.R
+  source("https://raw.githubusercontent.com/j-hagedorn/exploreSIS/master/prep/sis_mappings.R")
+    
   ## Encrypt IDs and create scrubbed file for app!!!
   source("https://raw.githubusercontent.com/j-hagedorn/exploreSIS/master/prep/scrub.R")
 
