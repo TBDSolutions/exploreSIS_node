@@ -31,7 +31,10 @@
 
   # Import total # needing assessment per CMHSP from local script
   source("prep/totals.R")
-  
+    
+  # Apply transformations to get "long" data for analysis of TOS
+  source("https://raw.githubusercontent.com/j-hagedorn/exploreSIS/master/prep/transform.R")
+    
 #####################################################################
 
 ## BUILD APP FROM CENTRAL REPO ##
